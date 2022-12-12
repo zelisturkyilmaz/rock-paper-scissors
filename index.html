@@ -9,11 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Rock, Paper, Scissors!</h1>
+    <header>
+         Rock, Paper, Scissors!
+    </header>
+    <div class="ctaText">Play against the computer. Player who reaches 5 wins the game. Choose your move!</div>
     <div class="selections">
-        <button class="rock"><img src="img/rock.svg"></button>
-        <button class="paper"><img src="img/paper.svg"></button>
-        <button class="scissors"><img src="img/scissors.svg"></button>
+        <button class="selection rock"><img src="img/rock.png"></button>
+        <button class="selection paper"><img src="img/paper.png"></button>
+        <button class="selection scissors"><img src="img/scissors.png"></button>
+    </div>
+    <div class="resultText">Rock Beats Scissors</div>
+    <div class="results">
+        <div class="choiceContainer">
+            <div class="userChoice"><img src="img/questionMark.png"></div>
+            <span class="userName">User</span>
+        </div>
+        <div class="score userScore">0</div>
+        <div class="score">-</div>
+        <div class="score compScore">0</div>
+        <div class="choiceContainer">
+            <div class="compChoice"><img src="img/questionMark.png"></div>
+            <span class="userName">Computer</span>
+        </div>
     </div>
 </body>
 </html>
