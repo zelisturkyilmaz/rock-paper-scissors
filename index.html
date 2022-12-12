@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/style.css" rel="stylesheet">
-    <script src="static/script.js"></script>
+    <script src="static/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,19 +14,19 @@
     </header>
     <div class="ctaText">Play against the computer. Player who reaches 5 wins the game. Choose your move!</div>
     <div class="selections">
-        <button class="selection rock"><img src="img/rock.png"></button>
-        <button class="selection paper"><img src="img/paper.png"></button>
-        <button class="selection scissors"><img src="img/scissors.png"></button>
+        <button class="selection" id="rock"><img src="img/rock.png"></button>
+        <button class="selection" id="paper"><img src="img/paper.png"></button>
+        <button class="selection" id="scissors"><img src="img/scissors.png"></button>
     </div>
-    <div class="resultText">Rock Beats Scissors</div>
+    <div class="resultText"></div>
     <div class="results">
         <div class="choiceContainer">
             <div class="userChoice"><img src="img/questionMark.png"></div>
             <span class="userName">User</span>
         </div>
-        <div class="score userScore">0</div>
+        <div class="score" id="userScore">0</div>
         <div class="score">-</div>
-        <div class="score compScore">0</div>
+        <div class="score" id="compScore" >0</div>
         <div class="choiceContainer">
             <div class="compChoice"><img src="img/questionMark.png"></div>
             <span class="userName">Computer</span>
