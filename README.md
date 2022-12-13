@@ -13,5 +13,6 @@ This project provides a fun and simple layout for playing against computer.
     - Rock beats scissors (rock crushes scissors)
     - Scissors beats paper (scissors cut paper)
     - Paper beats rock (paper covers rock)
-If both players choose the same option, the round is a tie.\
-The player who wins 5 rounds wins the game.
+    
+- If both players choose the same option, the round is a tie.
+- The player who wins 5 rounds wins the game.
