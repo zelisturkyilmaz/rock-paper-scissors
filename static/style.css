@@ -1,53 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+button {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=),auto;
+}
+
+html {
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0,pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(41, 41, 41);
+    background-color: #292929;
     justify-content: center;
     gap: 30px;
+    font-family: "Press Start 2P", sans-serif;
 }
+
+
 
 
 
 header {
-    border: 5px solid red;
-    font-size: 40px;
+    /* border: 5px solid red; */
+    font-size: 25px;
     font-weight: 900;
-    color: #2cd52c;
+    color: #92cc41;
     padding: 20px 0;
 
 }
 
-.ctaText, .resultText {
-    color: antiquewhite;
-    font-size: 20px;
-    border: 5px solid red;
+.ctaText {
+    color: #fff;
+    font-size: 17px;
+}
+
+.resultText {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 30px;
+    /* border: 5px solid red; */
 }
 
 .selections {
     display: flex;
     justify-content: center;
     gap: 25px; 
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 img {
     height: 180px;
     width: auto;
     display: flex;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
-button {
-    background-color: #2cd52c;
-    border: none;
-    border: 5px solid red;
+
+.selection {
+    background-color: #92cc41;
+    transition: all .07s ease
+}
+
+.selection:hover {
+    transform: scale(1.05);
+    border-color: #f7d51d;
+    box-shadow: 0 0 1rem #f7d51d;
 }
 
 .results {
@@ -66,13 +92,13 @@ button {
 }
 
 .score {
-    font-size: 200px;
+    font-size: 80px;
     color: aliceblue;
-    border: 3px solid rebeccapurple;
+    /* border: 3px solid rebeccapurple; */
 }
 
 .userName {
-    font-size: 25px;
+    /* font-size: 20px; */
     color: aliceblue;
     
 }
@@ -82,5 +108,26 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 3px solid rebeccapurple;
+    /* border: 3px solid #2cd52c; */
+}
+
+.userChoice, .compChoice {
+    border: 3px solid #292929;
+}
+
+.reset {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #f7d51d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f7d51d;
+}
+
+.hidden {
+    visibility: hidden;
 }
