@@ -8,7 +8,7 @@ Rock paper scissors is a simple hand game played by two people. The game involve
 This project provides a fun and simple layout for playing against computer.
 
 # How to play
-- Player chooses one of the three options by clicking one of the images.\
+- Player chooses one of the three options by clicking one of the images.
 - The winner is determined by the following rules:
     - Rock beats scissors (rock crushes scissors)
     - Scissors beats paper (scissors cut paper)
