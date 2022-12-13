@@ -53,7 +53,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore +=0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -66,7 +66,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 1;
             userScore +=0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -78,7 +78,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore +=1;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -92,7 +92,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore +=1;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -104,7 +104,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore +=0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -116,7 +116,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 1;
             userScore +=0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -130,7 +130,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 1;
             userScore +=0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -142,7 +142,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore +=1;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
@@ -154,7 +154,7 @@ function playRound (playerSelection,computerSelection) {
             computerScore += 0;
             userScore += 0;
             if (computerScore === 5){
-                resultText.textContent = "You lost the game!"
+                resultText.textContent = "You lost the game! :("
                 resetButton.classList.toggle("hidden");
             } else if ( userScore === 5) {
                 resultText.textContent = "Congratulations! You win the game!"
