@@ -16,10 +16,10 @@ const selectionButtons = document.querySelectorAll(".selection");
 let resultText = document.querySelector(".resultText");
 
 selectionButtons.forEach ( (btn) => {
-    if (computerScoreText.innerText === "5" || userScoreText.innerText === "5") return;
-    //It's not working!!
 
     btn.addEventListener("click", () => {
+        if (computerScoreText.innerText === "5" || userScoreText.innerText === "5") return;
+
         let playerSelection = btn.getAttribute("id");
         let computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
@@ -28,51 +28,113 @@ selectionButtons.forEach ( (btn) => {
     });
 })
 
+
+
 function playRound (playerSelection,computerSelection) {
     if (playerSelection === "rock") {
         if (computerSelection === "rock") {
             computerScore += 0;
             userScore +=0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="It's a tie";
+            }
+            
         } else if ( computerSelection === "paper") {
             computerScore += 1;
             userScore +=0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Lose! Paper beats Rock";
+            }
         } else {
             computerScore += 0;
             userScore +=1;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Win! Rock beats Scissors";
+            }
         } 
     } else if (playerSelection === "paper") {
         if (computerSelection === "rock") {
             computerScore += 0;
             userScore +=1;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Win! Paper beats Rock";
+            }
         } else if ( computerSelection === "paper") {
             computerScore += 0;
             userScore +=0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="It's a tie";
+            }
         } else {
             computerScore += 1;
             userScore +=0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Lose! Scissors beat Paper";
+            }
         } 
     } else {
         if (computerSelection === "rock") {
             computerScore += 1;
             userScore +=0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Lose! Rock beats Scissors";
+            }
         } else if ( computerSelection === "paper") {
             computerScore += 0;
             userScore +=1;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="You Win! Scissors beats Paper";
+            }
         } else {
             computerScore += 0;
             userScore += 0;
+            if (computerScore === 5){
+                resultText.textContent = "You Lost the game!"
+            } else if ( userScore === 5) {
+                resultText.textContent = "Congratulations! You win the game!"
+            } else {
             resultText.textContent="It's a tie";
+            }
         } 
     }
 }
+
+
+
+
+
 
 // function playRound(playerSelection,computerSelection) {
 //     if (playerSelection === "rock") {
