@@ -7,7 +7,7 @@ Rock paper scissors is a simple hand game played by two people. The game involve
 
 This project provides a fun and simple layout for playing against computer.
 
-[Play Now](https://zelisturkyilmaz.github.io/rock-paper-scissors/)
+[Play Now](https://playwith-rock-paper-scissors.netlify.app/)
 
 # How to play
 - Player chooses one of the three options by clicking one of the images.
